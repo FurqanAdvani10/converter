@@ -1,0 +1,154 @@
+// const name = jsonData?.map((obj, index) => {
+            //     const datejson = obj?.Remarks
+            //     const dateString = datejson;
+            //     const parts = dateString.split(' ');
+            //     const month = parts[0];
+            //     const day = parts[1];
+            //     const date = month + "1" + " " + day;
+
+            //     const { startDate, endDate, totalDaysInMonth } = getStartAndEndDayWithTotalDays(date);
+            //     // return {
+            //     // startDate: startDate, endDate: endDate, totalDaysInMonth: totalDaysInMonth
+            //     // }
+            //     // })
+
+            //     // console.log(name, "name")
+
+            //     // let obj = {
+            //     //     "AccountNo/IBAN": "",
+            //     //     "Emp Name": "",
+            //     //     "Establisment ID": "",
+            //     //     "Fixed Amount": "",
+            //     //     "Leave Days": "",
+            //     //     "Personal No": "",
+            //     //     "Remarks": "",
+            //     //     "Routing Code": "",
+            //     //     "Total Amount": "",
+            //     //     "Variable Amount": ""
+            //     // }
+
+            //     let tempObj = {
+            //         "Personal No": "",
+            //         "Routing Code": "",
+            //         "AccountNo/IBAN": "",
+            //         "Remarks": "",
+            //         "Fixed Amount": "",
+            //         "Variable Amount": "",
+            //         "Leave Days": ""
+            //     }
+
+            //     let sifString = ''
+            //     let sifRow = ''
+            //     for (let ob in obj) {
+            //         // console.log(obj)
+            //         for (let val in tempObj) {
+
+            //             if (ob == val) {
+
+            //                 tempObj[val] = obj[ob] + ","
+            //                 // ${startDate},${endDate},${totalDaysInMonth}
+            //                 sifRow += tempObj[val];
+            //                 // sifString += tempObj[val]
+
+            //                 // setSifData(sifString)
+
+            //             }
+            //             // sifString += sifRow;
+
+
+            //         }
+            //     }
+            //     sifString += `EDR,${sifRow}`;
+            //     setSifData(sifString)
+            //     console.log(sifString, "sifString")
+            //     console.log(tempObj, "tempObj")
+
+            // })
+
+            // console.log(sifString, "sifString")
+            // setSifData(sifString);
+
+            // let tempArray = [
+            //     "Personal No",
+            //     "Routing Code",
+            //     "AccountNo/IBAN",
+            //     "Remarks",
+            //     "Fixed Amount",
+            //     "Variable Amount",
+            //     "Leave Days"
+            // ];
+            // let tempObj = {
+            //     "Personal No": "",
+            //     "Routing Code": "",
+            //     "AccountNo/IBAN": "",
+            //     "Remarks": "",
+            //     "Fixed Amount": "",
+            //     "Variable Amount": "",
+            //     "Leave Days": ""
+            // };
+
+            // let datejson = jsonData[0]?.Remarks;
+            // const dateString = datejson;
+            // const parts = dateString.split(' ');
+            // const month = parts[0];
+            // const day = parts[1];
+            // const date = month + day;
+
+            // const { startDate, endDate, totalDaysInMonth } = getStartAndEndDayWithTotalDays(date);
+            // let sifString = ''
+            // let responseData = jsonData?.map((obj, ind) => {
+            //     let res = [];
+            //     for (let [key, value] of Object.entries(obj)) {
+            //         console.log('tempArray', tempArray)
+            //         if (tempArray.includes(key)) {
+            //             // console.log('tempArray.includes(key)', key, tempArray);
+            //             res.push(value);
+            //         }
+            //     }
+            //     const sifRow = `EDR,${res.join(',')},${startDate},${endDate},${totalDaysInMonth}\n`;
+            //     sifString += sifRow;
+            //     return sifString;
+            // });
+
+            // console.log('responseData', responseData)
+            // console.log('sifString', sifString)
+
+            // let responseData = jsonData?.map((obj, ind) => {
+            //     let str = ''
+            //     for (let ob in obj) {
+
+            //         for (let val in tempObj) {
+            //             if (ob == val) {
+
+            //                 tempObj[val] = jsontoob[ob];
+            //                 // str += jsontoob[ob] + ',';
+            //             }
+            //         }
+            //     }
+            //     console.log('tempObj', tempObj)
+            //     const sifRow = `EDR,${str},${startDate},${endDate},${totalDaysInMonth}\n`;
+            //     str = '';
+            //     sifString += sifRow;
+            //     // return tempObj
+            //     return sifString
+            // })
+
+            // console.log(sifString, "sifString")
+            // console.log(tempObj, "tempObj")
+
+
+
+            // let sifString = '';
+
+            // jsonData.forEach((row) => {
+            //     const values = Object.keys(row)
+            //         // .filter(key => key !== "Emp Name" && key !== "Establisment ID" && key !== "Remarks")
+            //         .map(key => row[key])
+            //         .join(',');
+            //     console.log(values, "values")
+            //     const sifRow = `EDR,${values},${startDate},${endDate},${totalDaysInMonth}\n`;
+            //     sifString += sifRow;
+            // });
+            // console.log(sifString, "sif")
+            // setSifData(responseData);
+        
